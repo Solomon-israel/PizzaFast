@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+li.sold-out {
+  color: #888;
+}
+
+li.sold-out img {
+  filter: grayscale(100%);
+}
