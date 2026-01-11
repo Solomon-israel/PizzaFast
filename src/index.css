@@ -5,6 +5,13 @@
   font-family: system-ui;
 }
 
+button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #c7c4c4;
+}
+
 li.sold-out {
   color: #888;
 }

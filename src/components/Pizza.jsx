@@ -9,14 +9,17 @@ export default function Pizza({ pizza }) {
       <div>
         <h3>{pizza.name}</h3>
         <p>{pizza.ingredients}</p>
-        <span>{pizza.soldOut}</span>
+        {pizza.soldOut ? (
+          <span>SOLD OUT</span>
+        ) : (
+          <span>cost ${pizza.price}</span>
+        )}
       </div>
     </li>
   );
 }
 
 const styles = {
-  pizza: {},
   soldOut: { color: "#888" },
-  pizzaImageUrl: { display: "block", width: "100%" },
+  pizzaImageUrl: { display: "block", width: "100%", borderRadius: "5px" },
 };
